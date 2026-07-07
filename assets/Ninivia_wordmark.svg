@@ -1,0 +1,14 @@
+<svg width="386" height="128" viewBox="243 42 193 64" xmlns="http://www.w3.org/2000/svg" role="img">
+<title>Ninivia wordmark</title>
+<desc>Logotipo Ninivia in Poppins, con un mattoncino-libro al posto del puntino su ogni i.</desc>
+<g transform="translate(244.00,100.00) scale(0.05600,-0.05600)"><path d="M646 0H532L189 519V0H75V696H189L532 178V696H646Z" fill="#4A3525"/></g>
+<g transform="translate(284.38,100.00) scale(0.05600,-0.05600)"><path d="M189 551V0H75V551Z" fill="#4A3525"/></g>
+<g transform="translate(299.16,100.00) scale(0.05600,-0.05600)"><path d="M579 325V0H466V308Q466 382 429.0 421.5Q392 461 328 461Q264 461 226.5 421.5Q189 382 189 308V0H75V551H189V488Q217 522 260.5 541.0Q304 560 353 560Q418 560 469.5 533.0Q521 506 550.0 453.0Q579 400 579 325Z" fill="#4A3525"/></g>
+<g transform="translate(335.50,100.00) scale(0.05600,-0.05600)"><path d="M189 551V0H75V551Z" fill="#4A3525"/></g>
+<g transform="translate(350.29,100.00) scale(0.05600,-0.05600)"><path d="M288 102 444 551H565L355 0H219L10 551H132Z" fill="#4A3525"/></g>
+<g transform="translate(382.54,100.00) scale(0.05600,-0.05600)"><path d="M189 551V0H75V551Z" fill="#4A3525"/></g>
+<g transform="translate(397.33,100.00) scale(0.05600,-0.05600)"><path d="M297 560Q362 560 410.5 534.5Q459 509 488 471V551H603V0H488V82Q459 43 409.0 17.0Q359 -9 295 -9Q224 -9 165.0 27.5Q106 64 71.5 129.5Q37 195 37 278Q37 361 71.5 425.0Q106 489 165.5 524.5Q225 560 297 560ZM321 461Q277 461 239.0 439.5Q201 418 177.5 376.5Q154 335 154 278Q154 221 177.5 178.0Q201 135 239.5 112.5Q278 90 321 90Q365 90 403.0 112.0Q441 134 464.5 176.5Q488 219 488 276Q488 333 464.5 375.0Q441 417 403.0 439.0Q365 461 321 461Z" fill="#4A3525"/></g>
+<rect x="288.27" y="47" width="7" height="14" rx="1.5" fill="#D98E3A"/>
+<rect x="339.40" y="47" width="7" height="14" rx="1.5" fill="#E0A52E"/>
+<rect x="386.44" y="47" width="7" height="14" rx="1.5" fill="#C9A05A"/>
+</svg>
