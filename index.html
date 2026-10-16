@@ -265,6 +265,55 @@
       font-family: 'Spectral', Georgia, serif;
     }
 
+    /* FAQ */
+    .faq {
+      padding: clamp(3rem, 8vw, 6rem) clamp(1.5rem, 6vw, 6rem) 0;
+      max-width: 820px;
+      margin: 0 auto;
+    }
+
+    .faq .section-label { text-align: center; margin-bottom: 2rem; }
+
+    .faq details { border-bottom: 1px solid rgba(140,123,107,0.25); }
+    .faq details:first-of-type { border-top: 1px solid rgba(140,123,107,0.25); }
+
+    .faq summary {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem;
+      padding: 1.1rem 0;
+      font-family: 'Poppins', system-ui, sans-serif;
+      font-weight: 500;
+      font-size: clamp(0.95rem, 1.6vw, 1.05rem);
+      color: var(--ink);
+      cursor: pointer;
+      list-style: none;
+    }
+    .faq summary::-webkit-details-marker { display: none; }
+    .faq summary::after {
+      content: '+';
+      flex-shrink: 0;
+      font-size: 1.4rem;
+      font-weight: 400;
+      line-height: 1;
+      color: var(--terracotta);
+      transition: transform 0.2s ease;
+    }
+    .faq details[open] summary::after { transform: rotate(45deg); }
+    .faq summary:hover { color: var(--terracotta-dark); }
+
+    .faq details p {
+      font-family: 'Spectral', Georgia, serif;
+      font-weight: 400;
+      font-size: 1rem;
+      line-height: 1.7;
+      color: #3D2B1A;
+      padding: 0 2rem 1.3rem 0;
+    }
+
+    .faq details a { color: var(--terracotta); }
+
     /* FOUNDER */
     .founder {
       background: var(--parchment);
@@ -582,6 +631,61 @@
   <div class="social-proof">
     <p>"Cada libro es un ladrillo;<br class="mobile-only"> cada lector, una columna.<br>Juntos, <strong>la biblioteca más grande del mundo</strong>."</p>
   </div>
+
+  <!-- FAQ -->
+  <section class="faq">
+    <p class="section-label">Preguntas frecuentes</p>
+
+    <details>
+      <summary>¿Ninivia es gratis?</summary>
+      <p>Sí. Subir libros, buscar, hacer match e intercambiar es gratis. Cada día tienes 10 likes, que se acumulan hasta 70. Si quieres apoyar el proyecto, puedes hacerte Amigo de Ninivia (likes ilimitados) o Fundador.</p>
+    </details>
+
+    <details>
+      <summary>¿Cómo funciona un intercambio?</summary>
+      <p>Subes los libros que ya leíste. Cuando a ti te gusta un libro de otra persona y a ella uno de los tuyos, hay match. Os escribís por el chat, quedáis en persona y os intercambiáis los libros. Después, cada uno confirma en la app que el intercambio se hizo.</p>
+    </details>
+
+    <details>
+      <summary>¿Dónde quedamos?</summary>
+      <p>Donde os venga bien a los dos, mejor en un lugar público: una cafetería, una biblioteca, una plaza del barrio. Habla siempre por el chat de Ninivia y no compartas datos personales que no hagan falta.</p>
+    </details>
+
+    <details>
+      <summary>¿Puedo decir que no?</summary>
+      <p>Claro. Si algo no te convence, en el chat pulsa «Confirmar» y elige «Decidimos no intercambiar». Sin explicaciones.</p>
+    </details>
+
+    <details>
+      <summary>¿El intercambio es para siempre?</summary>
+      <p>Sí, el libro pasa a ser de la otra persona y el suyo pasa a ser tuyo. Si hay un libro del que no quieres separarte, no lo marques como disponible. Estamos pensando en una forma de prestar libros, pero todavía no existe.</p>
+    </details>
+
+    <details>
+      <summary>¿Qué pasa si la otra persona no viene o el libro no está como esperaba?</summary>
+      <p>Al confirmar el intercambio puedes indicarlo. Nos ayuda a mantener una comunidad de confianza. Si hay un problema serio, escríbenos a <a href="mailto:hola@ninivia.com">hola@ninivia.com</a>.</p>
+    </details>
+
+    <details>
+      <summary>¿Quién ve dónde vivo?</summary>
+      <p>Nadie. Guardamos solo una ubicación aproximada (unos 100 metros) y a los demás solo les mostramos la distancia, nunca tu dirección.</p>
+    </details>
+
+    <details>
+      <summary>¿Solo funciona en Barcelona?</summary>
+      <p>Por ahora sí: empezamos barrio a barrio en Barcelona.</p>
+    </details>
+
+    <details>
+      <summary>¿Qué libros puedo subir?</summary>
+      <p>Los que ya leíste y no malvenderías por pocos euros: libros en buen estado que te gustaría que alguien más disfrutara.</p>
+    </details>
+
+    <details>
+      <summary>¿Hay edad mínima?</summary>
+      <p>Sí, Ninivia es para mayores de 18 años, porque los intercambios se hacen en persona. Si tienes hijos, puedes usar tu cuenta para intercambiar sus libros infantiles, juveniles o de texto: el intercambio lo haces tú.</p>
+    </details>
+  </section>
 
   <!-- FOUNDER -->
   <section class="founder">
