@@ -165,37 +165,6 @@
     }
     .cta-btn-secondary:hover { background: var(--terracotta); color: white; }
 
-    /* CONTADOR */
-    .contador {
-      display: flex;
-      justify-content: center;
-      gap: clamp(2rem, 6vw, 5rem);
-      padding: 3rem clamp(1.5rem, 6vw, 6rem);
-      border-top: 1px solid rgba(140,123,107,0.15);
-      border-bottom: 1px solid rgba(140,123,107,0.15);
-      opacity: 0;
-      transition: opacity 0.8s ease;
-    }
-    .contador.visible { opacity: 1; }
-
-    .contador-item { text-align: center; }
-
-    .contador-num {
-      font-size: clamp(2rem, 5vw, 3.5rem);
-      font-weight: 300;
-      color: var(--terracotta);
-      line-height: 1;
-      margin-bottom: 4px;
-    }
-
-    .contador-label {
-      font-family: 'Josefin Sans', sans-serif;
-      font-size: 0.62rem;
-      letter-spacing: 0.3em;
-      text-transform: uppercase;
-      color: var(--dust);
-    }
-
     /* MANIFESTO */
     .manifesto {
       padding: clamp(1rem, 2vw, 2rem) clamp(1.5rem, 6vw, 6rem);
@@ -212,13 +181,6 @@
       margin-bottom: 2rem;
     }
     .manifesto p strong { color: var(--terracotta); font-weight: 400; }
-
-    .manifesto-divider {
-      width: 80px;
-      height: 1px;
-      background: var(--gold);
-      margin: 2.5rem 0;
-    }
 
     /* HISTORY */
     .history {
@@ -269,8 +231,6 @@
       grid-template-columns: repeat(4, 1fr);
       gap: 2rem;
     }
-
-    .step { }
 
     .step-number {
       font-family: 'Josefin Sans', sans-serif;
@@ -355,45 +315,40 @@
     }
     .cta-btn:hover { background: var(--terracotta); }
 
-    /* STORE BADGES */
-    .store-badges {
-      display: flex;
-      justify-content: center;
-      gap: 16px;
+    .founder-note {
+      font-size: 0.95rem;
+      font-style: italic;
+      color: #3D2B1A;
+      opacity: 0.75;
+      margin-top: 0.9rem;
+    }
+
+    /* APP WEB */
+    .app-install {
       margin-top: 3rem;
-      flex-wrap: wrap;
+      padding-top: 2.5rem;
+      border-top: 1px solid rgba(140,123,107,0.25);
     }
 
-    .badge {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      border: 1px solid rgba(140,123,107,0.35);
-      border-radius: 4px;
-      padding: 10px 18px;
-      color: var(--dust);
-    }
-
-    .badge-icon { font-size: 22px; }
-
-    .badge-text {
-      text-align: left;
-      line-height: 1.2;
-    }
-
-    .badge-soon {
-      font-family: 'Josefin Sans', sans-serif;
-      font-size: 0.55rem;
-      letter-spacing: 0.2em;
-      text-transform: uppercase;
-      color: var(--dust);
-    }
-
-    .badge-store {
-      font-family: 'Josefin Sans', sans-serif;
-      font-size: 0.85rem;
+    .app-install-lead {
+      font-size: clamp(1.2rem, 2.5vw, 1.5rem);
       font-weight: 400;
-      color: var(--ink);
+      margin-bottom: 1rem;
+    }
+
+    .app-install-lead a {
+      color: var(--terracotta);
+      text-decoration: none;
+      border-bottom: 1px solid var(--terracotta);
+    }
+    .app-install-lead a:hover { opacity: 0.7; }
+
+    .app-install-step {
+      font-size: 1.05rem;
+      font-weight: 300;
+      line-height: 1.6;
+      color: #3D2B1A;
+      margin-bottom: 0.5rem;
     }
 
     /* SOCIAL PROOF */
@@ -495,7 +450,6 @@
     }
 
     @media (max-width: 600px) {
-      .contador { gap: 1.5rem; flex-wrap: wrap; }
       footer { flex-direction: column; text-align: center; }
       .footer-links { justify-content: center; }
       .steps { grid-template-columns: 1fr; gap: 2rem; }
@@ -554,18 +508,18 @@
     <p>
       Con Ninivia, esos libros se convierten en tu entrada a la biblioteca más grande del mundo.<br>
       Compartes los tuyos y accedes a los de miles de lectores como tú. Libros recomendados por personas reales, que puedes llegar a conocer.<br>
-      Sin comprar nada nuevo. Sin suscripciones. Solo lectores compartiendo lo que aman.
+      Sin comprar nada nuevo. Sin pagar por leer. Solo lectores compartiendo lo que aman.
     </p>
   </section>
 
   <!-- HISTORY -->
   <section class="history">
     <div class="history-inner">
-      <p class="history-label reveal">Hace casi tres mil años · Nínive</p>
-      <p class="history-quote reveal">
+      <p class="history-label">Hace casi tres mil años · Nínive</p>
+      <p class="history-quote">
         La primera gran biblioteca de la historia nació en Nínive, hace casi tres mil años. El rey Asurbanipal reunió allí el mayor saber de su tiempo: decenas de miles de tablillas de arcilla. Cuando Nínive ardió, el fuego no la borró: coció las tablillas y las guardó. Por eso, tres mil años después, todavía podemos leer la epopeya de Gilgamesh.
       </p>
-      <p class="history-quote reveal">
+      <p class="history-quote">
         Asurbani, su descendiente, lo entendió: si Gilgamesh sobrevivió al fuego, una biblioteca no son sus muros. Son sus libros y sus lectores. Por eso no quiere reconstruir un edificio, sino un pueblo que comparte sus libros y, juntos, levanta la biblioteca más grande del mundo.
       </p>
     </div>
@@ -573,24 +527,24 @@
 
   <!-- COMO FUNCIONA -->
   <section class="how">
-    <p class="section-label reveal">Cómo funciona</p>
+    <p class="section-label">Cómo funciona</p>
     <div class="steps">
-      <div class="step reveal">
+      <div class="step">
         <p class="step-number">01</p>
         <h3 class="step-title">Añade</h3>
         <p class="step-desc">Pon tus libros en la biblioteca común. Los tuyos dan acceso a los de todos los demás.</p>
       </div>
-      <div class="step reveal">
+      <div class="step">
         <p class="step-number">02</p>
         <h3 class="step-title">Descubre</h3>
         <p class="step-desc">Desliza libros cerca de ti. Personas con tus mismos gustos, a pocos pasos de donde estás.</p>
       </div>
-      <div class="step reveal">
+      <div class="step">
         <p class="step-number">03</p>
         <h3 class="step-title">Encuéntrate</h3>
         <p class="step-desc">El intercambio es físico por elección. Porque los libros siempre han unido a las personas.</p>
       </div>
-      <div class="step reveal">
+      <div class="step">
         <p class="step-number">04</p>
         <h3 class="step-title">Pasa el testigo</h3>
         <p class="step-desc">El libro vive. Circula. No coge polvo. La biblioteca crece con cada intercambio.</p>
@@ -599,44 +553,34 @@
   </section>
 
   <!-- SOCIAL PROOF -->
-  <div class="social-proof reveal">
+  <div class="social-proof">
     <p>"Cada libro es un ladrillo;<br class="mobile-only"> cada lector, una columna.<br>Juntos, <strong>la biblioteca más grande del mundo</strong>."</p>
   </div>
 
   <!-- FOUNDER -->
   <section class="founder">
     <div class="founder-inner">
-      <div class="founder-badge reveal">Los primeros 500 ladrillos · Membresía Founder</div>
-      <h2 class="reveal">Sé uno de los<br><em>500 que construyen</em><br>Ninivia</h2>
-      <p class="founder-bridge reveal">No es una suscripción. Es una decisión.</p>
-      <p class="founder-desc reveal">
-        Los primeros 500 lectores que apoyen el proyecto se convierten en fundadores.
-        Tu nombre en los créditos permanentes de la app. Badge de fundador visible en tu perfil.
-        Acceso prioritario el día del lanzamiento.
+      <div class="founder-badge">Los primeros 500 ladrillos · Fundadores</div>
+      <h2>Sé uno de los<br><em>500 que construyen</em><br>Ninivia</h2>
+      <p class="founder-bridge">No es una compra. Es una decisión.</p>
+      <p class="founder-desc">
+        Los primeros 500 lectores que apoyen el proyecto se convierten en Fundadores:
+        tu nombre en el muro de los 500 dentro de la app, badge de Fundador en tu perfil
+        y todas las ventajas de Amigo de Ninivia incluidas.
       </p>
-      <p class="founder-desc reveal">
-        20€ al año, renovable. Si decides pausar, tu nombre queda para siempre
-        en los créditos fundacionales. El badge activo se reactiva cuando vuelvas.
+      <p class="founder-desc">
+        100€ al año, renovable. Si decides pausar, tu nombre se queda para siempre
+        en el muro fundacional y el badge vuelve cuando regreses.
       </p>
-      <p class="founder-desc reveal" style="font-style: italic;">Menos de 2€ al mes.</p>
-      <a href="mailto:hola@ninivia.com" class="cta-btn reveal">Quiero ser fundador</a>
+      <p class="founder-desc" style="font-style: italic;">¿Prefieres algo más ligero? Hazte Amigo de Ninivia: 3,99€ al mes o 43,99€ al año.</p>
+      <a href="mailto:hola@ninivia.com?subject=Quiero%20ser%20Fundador" class="cta-btn">Quiero ser Fundador: avísame</a>
+      <p class="founder-note">Te avisaremos cuando abramos las aportaciones.</p>
 
-      <!-- STORE BADGES -->
-      <div class="store-badges reveal">
-        <div class="badge">
-          <div class="badge-icon">&#xf8ff;</div>
-          <div class="badge-text">
-            <div class="badge-soon">Próximamente en</div>
-            <div class="badge-store">App Store</div>
-          </div>
-        </div>
-        <div class="badge">
-          <div class="badge-icon">▶</div>
-          <div class="badge-text">
-            <div class="badge-soon">Próximamente en</div>
-            <div class="badge-store">Google Play</div>
-          </div>
-        </div>
+      <!-- APP WEB -->
+      <div class="app-install">
+        <p class="app-install-lead">Úsala ya desde el móvil: <a href="https://app.ninivia.com">app.ninivia.com</a></p>
+        <p class="app-install-step">iPhone (Safari): toca Compartir y luego «Añadir a pantalla de inicio». Si lo abres desde WhatsApp o Instagram, ábrelo antes en Safari.</p>
+        <p class="app-install-step">Android (Chrome): toca ⋮ y luego «Instalar aplicación».</p>
       </div>
     </div>
   </section>
