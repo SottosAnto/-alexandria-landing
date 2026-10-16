@@ -20,6 +20,9 @@
       --dust: #C9A05A;
       --gold: #E0A52E;
       --beige: #EDE3D6;
+      /* Space above and below the hero buttons: equal on both sides, so the
+         buttons sit halfway between the hero text and the tagline. */
+      --hero-cta-gap: calc((12px + clamp(1.5rem, 4vw, 3rem) + 2.5rem) * 2 / 3);
     }
 
     body {
@@ -76,7 +79,7 @@
     /* HERO */
     .hero {
       text-align: center;
-      padding: clamp(1.5rem, 4vw, 3rem) clamp(1.5rem, 6vw, 6rem) clamp(1.5rem, 4vw, 3rem);
+      padding: clamp(1.5rem, 4vw, 3rem) clamp(1.5rem, 6vw, 6rem) 0;
       position: relative;
     }
 
@@ -136,9 +139,7 @@
       font-weight: 400;
       color: var(--ink);
       max-width: 720px;
-      /* Same as the space below the buttons (hero-cta margin + hero padding +
-         tagline padding), so the buttons sit halfway between the two texts. */
-      margin: 0 auto calc(12px + clamp(1.5rem, 4vw, 3rem) + 2.5rem);
+      margin: 0 auto var(--hero-cta-gap);
       opacity: 0;
       animation: fadeUp 1s ease forwards 1.1s;
       font-family: 'Spectral', Georgia, serif;
@@ -153,7 +154,6 @@
       grid-auto-columns: 1fr;
       gap: 16px;
       vertical-align: top;
-      margin-bottom: 12px;
       opacity: 0;
       animation: fadeUp 1s ease forwards 1.3s;
     }
@@ -450,7 +450,7 @@
     /* TAGLINE */
     .tagline-section {
       text-align: center;
-      padding: 2.5rem clamp(1.5rem, 6vw, 6rem) 1rem;
+      padding: var(--hero-cta-gap) clamp(1.5rem, 6vw, 6rem) 1rem;
     }
 
     .tagline-text {
@@ -578,7 +578,7 @@
   <!-- MANIFESTO -->
   <section class="manifesto">
     <p>
-      Hay apps para ver&nbsp;series,<br class="mobile-only"> escuchar&nbsp;música,<br class="mobile-only"> ver&nbsp;películas.<br>
+      Hay apps para ver series, escuchar música, ver películas.<br>
       Para leer, ¿qué tienes?<br>
       Comprar libros nuevos a 20 euros, o buscar en mercadillos esperando encontrar algo que valga la pena.
     </p>
