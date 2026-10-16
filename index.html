@@ -34,6 +34,10 @@
       font-weight: 400;
     }
 
+    /* Avoid single-word last lines in text and uneven lines in titles. */
+    p { text-wrap: pretty; }
+    h1, h2, h3 { text-wrap: balance; }
+
     body::before {
       content: '';
       position: fixed;
