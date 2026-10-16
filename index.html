@@ -136,21 +136,30 @@
       font-weight: 400;
       color: var(--ink);
       max-width: 720px;
-      margin: 0 auto 0.8rem;
+      /* Same as the space below the buttons (hero-cta margin + hero padding +
+         tagline padding), so the buttons sit halfway between the two texts. */
+      margin: 0 auto calc(12px + clamp(1.5rem, 4vw, 3rem) + 2.5rem);
       opacity: 0;
       animation: fadeUp 1s ease forwards 1.1s;
       font-family: 'Spectral', Georgia, serif;
     }
 
     /* HERO CTA */
+    /* inline-grid shrinks to its content; 1fr columns make both buttons as wide
+       as the widest one ("Registrarme"). */
     .hero-cta {
-      display: flex;
+      display: inline-grid;
+      grid-auto-flow: column;
+      grid-auto-columns: 1fr;
       gap: 16px;
-      justify-content: center;
-      flex-wrap: wrap;
+      vertical-align: top;
       margin-bottom: 12px;
       opacity: 0;
       animation: fadeUp 1s ease forwards 1.3s;
+    }
+
+    @media (max-width: 500px) {
+      .hero-cta { grid-auto-flow: row; }
     }
 
     .cta-btn-secondary {
