@@ -1,0 +1,6 @@
+# Dominio vecchio → ninivia.com, 301 permanente. Il "!" serve perché /
+# esiste (index.html) e altrimenti la regola verrebbe ignorata.
+http://alexandriabiblio.com/*       https://ninivia.com/:splat  301!
+https://alexandriabiblio.com/*      https://ninivia.com/:splat  301!
+http://www.alexandriabiblio.com/*   https://ninivia.com/:splat  301!
+https://www.alexandriabiblio.com/*  https://ninivia.com/:splat  301!
